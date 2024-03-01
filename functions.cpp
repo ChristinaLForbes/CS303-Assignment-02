@@ -59,8 +59,13 @@ void printLinkedListExample() {
   list1.printList();
   cout << endl << endl;
 
-  cout << "Inserted value '10' at index '2' in list" << endl;
-  list1.insert(2, 10);
+  cout << "Inserted value '10' at index '0' in list" << endl;
+  list1.insert(0, 10);
+  list1.printList();
+  cout << endl << endl;
+
+  cout << "Inserted value '3' at index '4' in list" << endl;
+  list1.insert(4, 3);
   list1.printList();
   cout << endl << endl;
 
@@ -69,11 +74,16 @@ void printLinkedListExample() {
   list1.printList();
   cout << endl << endl;
 
-  list1.remove(3);
+  list1.remove(5);
   list1.printList();
   cout << endl << endl;
 
-  cout << "Found value '10' at index '" << list1.find(10) << "'" << endl;
+  list1.remove(0);
+  cout << "Removed value at index '0' from list" << endl;
+  list1.printList();
+  cout << endl << endl;
+
+  cout << "Found value '5' at index '" << list1.find(5) << "'" << endl;
   cout << "Note: if index value = list size, then value was not found in list" << endl;
   list1.printList();
   cout << endl << endl;
